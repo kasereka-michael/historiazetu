@@ -1,0 +1,206 @@
+
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: flex-start; 
+      flex-wrap: wrap;
+    }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;
+      
+  }
+  
+  .clouds{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+  
+     -moz-animation:move-background 150s linear infinite;
+    -ms-animation:move-background 150s linear infinite;
+    -o-animation:move-background 150s linear infinite;
+    -webkit-animation:move-background 150s linear infinite;
+    animation:move-background 150s linear infinite;
+  }
+  .img{
+    height: 70vh;
+    width:70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+  }
+  .welcome{ 
+    position: relative;
+    padding: 5px;
+    color: aliceblue;
+    z-index: 5;
+    margin: 2rem !important;
+}
+
+.drc{
+    /* z-index: 4;
+    height: 20rem;
+    width: 20rem;
+    align-self: center; */
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+}
+nav{
+    position: fixed;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+}
+.welcome-header{
+    font-family: "EB Garamond", serif !important;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 5rem;
+}  
+
+.paragraph{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+.abonne-message{
+    font-style: italic;
+    font-weight: 300;
+}
+.media-icon{
+    color: #fff;
+    font-size: 2rem;
+    margin: 5px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.media-icon:hover{
+    background-color: #dadada9c;
+    cursor: pointer;
+}
+
+.media-container{
+    padding-top: 1rem;
+}
+.plus-lu{
+    position: absolute;
+    right: 27%;
+    bottom: 40%;
+    height: fit-content;
+    z-index: 4;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 20x solid rgba(255, 255, 255, 0.18);
+}
+.card{
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 20x solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 768px){
+    .background-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        padding: 1rem !important;
+        z-index: -4;
+    }
+    .img{
+        position: absolute;
+        width:100% !important;
+      }
+      .welcome{
+
+      }
+    .img{
+        position: relative !important;
+        width: 100% !important;
+    }
+      .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+
+        .col-md-12 {
+            flex: 0 0 100%;
+            max-width: 100% !important;
+        }
+    .p-2 {
+        padding: 0.5rem !important;
+    }
+    
+}
