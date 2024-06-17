@@ -10978,10 +10978,7 @@ html {
   padding-bottom: 1rem;
 }
 .profile-card{
-    position: absolute;
     width: 20rem;
-    top:8rem;
-    right: 15rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
