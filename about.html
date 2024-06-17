@@ -18,24 +18,21 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/main-bc.css" rel="stylesheet" />
-       
+   
     </head>
     <body>
         
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+ <nav class="navbar navbar-dark bg-dark" id="nav-container">
+        <div class="container navbar-container">
             <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+    
+            <div class=" d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-navi" id="responsive">
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link " href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link n-active" href="about.html">About Us</a>
@@ -47,8 +44,14 @@
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
+                <button class="navbar-toggler" type="button"  id="nav-btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
+
+             
         </div>
+
     </nav>
 
 
@@ -61,7 +64,7 @@
         
         <div class="container-fuild justify-content-center about-container">
                  <div class="container px-4 px-lg-0 text-about">
-                    <h1 class="fst-italic lh-1 mb-4">About us</h1>
+                    <h1 class="fst-italic lh-1 mb-4 welcome-header">About us</h1>
                     <p class="mb-3">
                         Au cœur du Nord-Kivu, où la souffrance est devenue un compagnon obsédant pour son peuple, une lueur d'espoir s'est allumée en nous, Michael Kasereka, un ingénieur passionné en informatique. Témoin des épreuves implacables endurées par les innocents - enfants, aînés et femmes - nous ne pouvions plus supporter le poids du silence.
                     </p>
@@ -74,29 +77,41 @@
                     <p class="mb-3">
                         Ensemble, alimentés par un sentiment de but commun, nous avons entrepris un voyage pour dévoiler les vérités cachées du Nord-Kivu, pour susciter l'empathie et pour déclencher l'action là où régnait autrefois l'apathie.
                     </p>
-
                     <p class="mb-3">
                         Ainsi, unis dans notre résolution, nous vous invitons à vous joindre à nous pour être témoins des récits non racontés qui réclament reconnaissance et compassion.
                     </p>
                 </div>
-
                 <div class="profile-card">
-            <div class="card" style="width: 18rem;" data-aos="fade-up">
+            <div class="card" style="width: fit-content; height: fit-content;" data-aos="fade-up">
                 <img src="img/devphoto.png" class="card-img-top" alt="..." style="height: 15rem; width: 100%">
             <div class="card-body">
            <h5 class="mb-3">Kasereka michael</h5>
             <h6 class="text-primary mb-3">Full-stack developer</h6>
             <a href="#" class="btn btn-primary">know more...</a>
             </div>
+             <div class="dock-container">
+        <div class="dock">
+            <a><ion-icon class="icon git" name="logo-github"></ion-icon></a>
+            <a><ion-icon class="icon inst" name="logo-instagram"></ion-icon></a>
+            <a><ion-icon class="icon youtu" name="logo-youtube"></ion-icon></a>
+        </div>
+    </div>
             </div>
 
-             <div class="card" style="width: 18rem;" data-aos="fade-down">
+             <div class="card" style="width: fit-content; height: fit-content;" data-aos="fade-down">
                 <img src="img/devphoto.png" class="card-img-top" alt="..." style="height: 15rem; width: 100%">
             <div class="card-body">
             <h5 class="mb-3">Aubin mukoni</h5>
             <h6 class="text-primary mb-3">professionnel protographer</h6>
             <a href="#" class="btn btn-primary">know more...</a>
             </div>
+                     <div class="dock-container">
+        <div class="dock">
+            <a><ion-icon class="icon face" name="logo-facebook"></ion-icon></a>
+            <a><ion-icon class="icon inst" name="logo-instagram"></ion-icon></a>
+            <a><ion-icon class="icon youtu" name="logo-youtube"></ion-icon></a>
+        </div>
+    </div>
             </div>
 
             

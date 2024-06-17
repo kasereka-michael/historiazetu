@@ -234,12 +234,99 @@ nav{
     z-index: 5;
     display: flex;
     gap: 5rem;
-    padding: 10rem 0;
+    padding: 5rem 0;
+    flex-wrap: wrap;
 }
 .text-about{
     width: 50rem;
 }
 
+.dock-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dock {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.dock a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.dock a:hover {
+    transform: scale(1.2);
+}
+.icon {
+    font-size: 48px;
+}
+.icon.github {
+    color: #000;
+}
+.icon.github:hover {
+    color: #333;
+}
+.icon.face {
+    color: #3b5998;
+}
+.icon.face:hover {
+    color: #2d4373;
+}
+.icon.inst {
+    color: #E4405F;
+}
+.icon.inst:hover {
+    color: #bc2a8d;
+}
+.icon.youtu {
+    color: #FF0000;
+}
+.icon.youtu:hover {
+    color: #cc0000;
+}
+
+.testimoniy-container{
+     position: relative;
+     z-index: 5;   
+     color:#fff;
+     padding: 2rem 5rem!important;
+
+}
+.voici-ce-que{
+    float: left;
+    font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 767px) {
+    .dock {
+        display: none;
+    }
+
+    .expand-dock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .expand-button {
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+}
+.nav-btn{
+    
+}
+.navbar-toggler{
+    margin-left: 1rem;
+}
 @media (max-width: 1300px) {
     
     .welcome-header {
@@ -260,6 +347,21 @@ nav{
 }
 
 @media (max-width: 992px) {
+    .navbar-toggler{
+        display: block;
+        height: fit-content;
+    }
+    .navbar-navi{
+        display: none !important;
+    }
+
+    .responsive{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
     body{
         width: 100%;
     }
