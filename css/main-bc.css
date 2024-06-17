@@ -213,11 +213,18 @@ nav{
     padding: 0.4rem;
 }
 .container-ctn{
-    padding:5rem;
+    padding:2rem;
 }
-
+.contact-message {
+    position: relative;
+    z-index: 4;
+}
+.contact-container{
+    position: relative;
+    z-index: 4;
+}
 .form-container{
-    padding: 2rem;
+    padding: 1rem;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border-radius: 10px;
@@ -354,7 +361,10 @@ nav{
     .navbar-navi{
         display: none !important;
     }
+.contact-message{
+    padding: 1rem;
 
+} 
     .responsive{
         display: flex !important;
         flex-direction: column;
