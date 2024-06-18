@@ -1,0 +1,58 @@
+.main-container-blog{
+    color: #fff;
+    margin: 2rem 5rem;
+}
+ /* Filter Component Styles */
+ .filter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(243, 232, 232, 0.288);
+    box-shadow: 0 2px 8px rgba(27, 22, 22, 0.1);
+   
+}
+
+
+
+.filter ion-icon {
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.filter .form-select {
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    transition: border-color 0.3s;
+    background-color: rgba(243, 232, 232, 0.288);
+    height: 100%;
+    margin-bottom: 0 !important;
+    outline: none;
+}
+
+.filter .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px hsla(0, 0%, 91%, 0.247);
+    background-color: rgba(243, 232, 232, 0.288);
+}
+
+.select2-container--default .select2-selection--single {
+    height: 38px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 5px;
+}
+
+.select2-container--default .select2-results__option {
+    background-color: #ffffff;
+    color: #495057;
+}
