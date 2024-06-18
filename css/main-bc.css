@@ -63,7 +63,7 @@ body{
   .twinkling{
       width:10000px;
       height: 100%;
-      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background: transparent url("assets/img/twinkling.png") repeat;
       background-size: 1000px 1000px;
       position: absolute;
       right: 0;
@@ -82,7 +82,7 @@ body{
   .clouds{
       width:1000%;
       height: 100%;
-      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background: transparent url("/assets/img/clouds_repeat.png") repeat;
       background-size: 1000px 1000px;
       position: absolute;
       right: 0;
@@ -151,10 +151,11 @@ nav{
     width: 50%;
 }
 .paragraph{
-  font-family: "Cormorant Garamond", serif;
+    font-family: 'Merriweather', serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.7rem;
+  font-size: 1em;
+  padding-top: 2rem;
 }
 .abonne-message{
     font-style: italic;
@@ -247,8 +248,8 @@ nav{
 
 .dock-container {
     text-align: center;
-    background: white;
-    padding: 20px;
+    /* background: white; */
+    padding: 0.6rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -267,7 +268,7 @@ nav{
     transform: scale(1.2);
 }
 .icon {
-    font-size: 48px;
+    font-size: 2rem;
 }
 .icon.github {
     color: #000;
