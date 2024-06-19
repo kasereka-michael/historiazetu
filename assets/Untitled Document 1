@@ -79,3 +79,49 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
+
+
+
+        Bienvenue dans un espace dédié à amplifier les voix de ceux impactés par la guerre au Nord-Kivu, République Démocratique du Congo. Ici, vous trouverez des récits historiques déchirants mais puissants partagés par les personnes qui les ont vécus.
+        Ce ne sont pas seulement des histoires de difficultés, mais des témoignages de l'incroyable résilience de l'esprit humain. Nous partageons ces histoires parce qu'elles pourraient vous toucher profondément. Peut-être qu'elles susciteront le désir d'aider ceux dans le besoin, ou peut-être qu'elles apporteront une lueur d'espoir en ces temps sombres.
+
+
+
+
+
+
+        <div class="media-container">
+            <div>
+                <a href="" class="social-links"><ion-icon name="logo-facebook" class="media-icon"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram" class="media-icon"></ion-icon></a>
+                <a href=""><ion-icon name="logo-youtube" class="media-icon"></ion-icon></a>
+            </div>
+            
+             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Email address input-->
+                        <div class="row input-group-newsletter">
+                            <P class="abonne-message">Abonnez-vous pour recevoir des notifications des nouvelles histoires et en apprendre davantage sur les habitants du Nord-Kivu.</p>
+                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Notify Me!</button></div>
+                        </div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
+
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3 mt-2">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                    </form>
+
+                    <div class="img">
+                
+                    </div>
+            </div>
+
+
