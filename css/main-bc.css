@@ -1,6 +1,13 @@
 body{
     width: 100%;
     box-sizing: border-box;
+    background-image:  url('/assets/img/homebk.webp') ;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
 }
 
 @keyframes move-background {
@@ -60,10 +67,16 @@ body{
         z-index: 0;
   }
   
+/* for home page */
+
+
+   
+
+
   .twinkling{
       width:10000px;
       height: 100%;
-      background: transparent url("assets/img/twinkling.png") repeat;
+      background: transparent url("/assets/img/twinkling.png") repeat;
       background-size: 1000px 1000px;
       position: absolute;
       right: 0;
